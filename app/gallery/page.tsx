@@ -4,10 +4,13 @@ export default function Gallery() {
       <h1 className="text-3xl font-bold text-red-700 mb-4">Gallery</h1>
       <p className="text-base text-gray-800 mb-8 text-center">See our sweeper trucks in action and the results of our work!</p>
       <div className="flex gap-8 flex-wrap justify-center">
-        {/* Example images, replace with real images as needed */}
-        <img src="/truck1.jpg" alt="Sweeper Truck 1" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
-        <img src="/truck2.jpg" alt="Sweeper Truck 2" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
-        <img src="/sweep-action.jpg" alt="Sweeping in Action" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
+        
+        <img src="/Images/CleanEntrance1.jpg" alt="Clean Entrance 1" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
+        <img src="/Images/CleanEntrance2.jpg" alt="Clean Entrance 2" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
+        <img src="/Images/CleanLot1.jpg" alt="Clean Lot 1" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
+        <img src="/Images/CleanLot3.jpg" alt="Clean Lot 3" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
+        <img src="/Images/CleanLot4.jpg" alt="Clean Lot 4" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
+        <img src="/Images/CleanLot5.jpg" alt="Clean Lot 5" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
       </div>
     </main>
   );

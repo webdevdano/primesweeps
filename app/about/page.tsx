@@ -1,25 +1,64 @@
+import Footer from "@/app/components/Footer";
+
 export default function About() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-12">
-      <h1 className="text-3xl font-bold text-red-700 mb-4">About PrimeSweep</h1>
-      <p className="text-base text-gray-800 mb-8 max-w-2xl text-center">
-        PrimeSweep is a professional street sweeping business specializing in keeping roads, parking lots, and industrial areas clean using state-of-the-art sweeper trucks. Our experienced team is dedicated to providing reliable, efficient, and environmentally friendly services for communities and businesses.
-      </p>
-      <section className="mb-8 w-full max-w-xl">
-        <h2 className="text-xl font-semibold text-gray-700 mb-2">Our Mission</h2>
-        <p className="text-gray-700">
-          To deliver top-quality street sweeping solutions that enhance safety, appearance, and sustainability for our clients.
-        </p>
+    <main className="flex flex-col items-center min-h-screen bg-red-700 px-0 py-0">
+      {/* Hero Section */}
+      <section className="w-full bg-gradient-to-r from-red-50 to-white border-b-2 border-gray-100 py-20 px-4 flex flex-col items-center justify-center">
+        <div className="max-w-3xl text-center">
+          <h1 className="text-5xl font-bold text-red-700 mb-6 font-poppins-italic-700">About PrimeSweepServices</h1>
+          <p className="text-lg text-gray-800 mb-2">
+            PrimeSweep is a professional street sweeping business specializing in keeping roads, parking lots, and industrial areas clean using state-of-the-art sweeper trucks.
+          </p>
+          <p className="text-lg text-gray-800 mb-4">
+            Our experienced team is dedicated to providing reliable, efficient, and environmentally friendly services for communities and businesses.
+          </p>
+        </div>
       </section>
-      <section className="w-full max-w-xl">
-        <h2 className="text-xl font-semibold text-gray-700 mb-2">Why Choose Us?</h2>
-        <ul className="list-disc list-inside text-gray-700">
-          <li>Modern sweeper trucks</li>
-          <li>Experienced operators</li>
-          <li>Flexible scheduling</li>
-          <li>Eco-friendly practices</li>
-        </ul>
+
+      {/* Bubbles stacked, side-by-side with contact form */}
+      <section className="w-full bg-red-700 py-8">
+        <div className="flex flex-col md:flex-row gap-10 w-full max-w-6xl justify-center items-stretch px-4 mx-auto mt-0 z-10 relative mb-4">
+          {/* Bubbles stacked vertically */}
+          <div className="flex flex-col gap-8 flex-1">
+            <section className="bg-gradient-to-r from-red-50 to-white rounded-3xl shadow-xl p-8 flex flex-col justify-center items-center text-red-700">
+              <h2 className="text-2xl font-bold mb-2">Our Mission</h2>
+              <p className="text-lg">
+                To deliver top-quality street sweeping solutions that enhance safety, appearance, and sustainability for our clients.
+              </p>
+            </section>
+            <section className="bg-gradient-to-r from-red-50 to-white rounded-3xl shadow-xl p-8 flex flex-col justify-center items-center text-red-700">
+              <h2 className="text-2xl font-bold mb-2">Why Choose Us?</h2>
+              <ul className="list-disc list-inside text-red-700 text-lg">
+                <li>Modern sweeper trucks</li>
+                <li>Experienced operators</li>
+                <li>Flexible scheduling</li>
+                <li>Eco-friendly practices</li>
+              </ul>
+            </section>
+          </div>
+          {/* Contact Form */}
+          <section className="flex-1 bg-gradient-to-r from-red-50 to-white rounded-2xl shadow-xl border border-gray-100 p-8 flex flex-col justify-center">
+            <h2 className="text-2xl font-bold text-red-700 mb-4">Contact Us</h2>
+            <form className="flex flex-col gap-5">
+              <div>
+                <label htmlFor="name" className="block text-gray-700 font-medium mb-1">Name</label>
+                <input type="text" id="name" name="name" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-gray-700 font-medium mb-1">Email</label>
+                <input type="email" id="email" name="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-gray-700 font-medium mb-1">Message</label>
+                <textarea id="message" name="message" rows={5} required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"></textarea>
+              </div>
+              <button type="submit" className="mt-2 bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow hover:bg-red-800 transition text-lg self-end">Send Message</button>
+            </form>
+          </section>
+        </div>
       </section>
+      <Footer />
     </main>
   );
 }
