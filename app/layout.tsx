@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +10,13 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  weight: "700",
+  style: "italic",
+  subsets: ["latin"],
+  variable: "--font-poppins-italic-700",
 });
 
 export const metadata: Metadata = {
@@ -24,14 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}>
-        <nav className="w-full bg-white border-b-2 border-gray-100 shadow mb-8">
+      <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased bg-white`}>
+        <nav className="w-full bg-red-700 shadow mb-8">
           <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-4">
-            <a href="/" className="text-red-700 font-bold text-2xl tracking-wide">PrimeSweep</a>
+            <a href="/" className="text-white font-bold text-2xl tracking-wide font-poppins-italic-700">PrimeSweepServices</a>
             <div className="flex gap-8">
-              <a href="/" className="text-gray-700 font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition">Home</a>
-              <a href="/about" className="text-gray-700 font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition">About</a>
-              <a href="/gallery" className="text-gray-700 font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition">Gallery</a>
+              <a href="/" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition">Home</a>
+              <a href="/about" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition">About</a>
+              <a href="/gallery" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition">Gallery</a>
             </div>
           </div>
         </nav>

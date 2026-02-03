@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-white">
       <section className="text-center py-16">
-        <h1 className="text-4xl font-bold text-red-700 mb-2">PrimeSweep</h1>
+        <h1 className="text-4xl font-bold text-red-700 mb-2 font-poppins-italic-700">PrimeSweepServices</h1>
         <h2 className="text-xl text-gray-600 mb-6">Professional Street Sweeping Services</h2>
         <p className="text-base text-gray-800 mb-8 max-w-lg mx-auto">
           Clean streets, safe communities. We specialize in thorough, reliable street sweeping using modern sweeper trucks.

@@ -9,7 +9,7 @@ export default function Footer() {
           <span>Email: info@primesweep.com</span>
           <span>123 Main St, Anytown, USA</span>
         </div>
-          <span className="text-gray-700 block mb-2">&copy; {new Date().getFullYear()} <span className="text-red-700 font-bold">PrimeSweep</span>. All rights reserved.</span>
+          <span className="text-gray-700 block mb-2">&copy; {new Date().getFullYear()} <span className="text-red-700 font-bold">PrimeSweepServices</span>. All rights reserved.</span>
           <span className="text-gray-500 text-xs">Developed by <a href="https://danielmarinelarena.vercel.app" target="_blank" rel="noopener noreferrer">Daniel Marinelarena</a></span>
       </div>
     </footer>
