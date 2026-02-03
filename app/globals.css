@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Geist', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.cta-btn {
+  background: #c00;
+  color: #fff;
+  padding: 0.75em 2em;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 8px #eee;
+  transition: background 0.2s;
+}
+.cta-btn:hover {
+  background: #a00;
+}
+
+nav a {
+  transition: background 0.2s, color 0.2s;
+}
+nav a:hover {
+  background: #eee;
+  color: #c00;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.gallery-grid img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 1em;
+  box-shadow: 0 2px 8px #eee;
+  border: 2px solid #c00;
+}
