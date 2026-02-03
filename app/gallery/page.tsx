@@ -1,17 +1,43 @@
+'use client';
+
+import Footer from "@/app/components/Footer";
+import { useState } from "react";
+
+
+const images = [
+  { src: "/Images/CleanEntrance1.jpg", alt: "Clean Entrance 1" },
+  { src: "/Images/CleanEntrance2.jpg", alt: "Clean Entrance 2" },
+  { src: "/Images/CleanLot1.jpg", alt: "Clean Lot 1" },
+  { src: "/Images/CleanLot3.jpg", alt: "Clean Lot 3" },
+  { src: "/Images/CleanLot4.jpg", alt: "Clean Lot 4" },
+  { src: "/Images/CleanLot5.jpg", alt: "Clean Lot 5" },
+];
+
 export default function Gallery() {
+  const [modalImg, setModalImg] = useState<null | { src: string; alt: string }>(null);
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-white px-4 py-12">
-      <h1 className="text-3xl font-bold text-red-700 mb-4">Gallery</h1>
-      <p className="text-base text-gray-800 mb-8 text-center">See our sweeper trucks in action and the results of our work!</p>
-      <div className="flex gap-8 flex-wrap justify-center">
-        
-        <img src="/Images/CleanEntrance1.jpg" alt="Clean Entrance 1" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
-        <img src="/Images/CleanEntrance2.jpg" alt="Clean Entrance 2" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
-        <img src="/Images/CleanLot1.jpg" alt="Clean Lot 1" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
-        <img src="/Images/CleanLot3.jpg" alt="Clean Lot 3" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
-        <img src="/Images/CleanLot4.jpg" alt="Clean Lot 4" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
-        <img src="/Images/CleanLot5.jpg" alt="Clean Lot 5" className="w-56 h-36 object-cover rounded-xl shadow border-2 border-red-700" />
+      <h1 className="text-3xl font-bold text-red-700 mb-4 font-poppins-italic-700">Gallery</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-5xl mx-auto">
+        {images.map((img) => (
+          <img
+            key={img.src}
+            src={img.src}
+            alt={img.alt}
+            className="w-full h-72 object-cover rounded-2xl shadow-lg border-2 border-red-700 cursor-pointer transition-transform hover:scale-105"
+            onClick={() => setModalImg(img)}
+          />
+        ))}
       </div>
+      {modalImg && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70" onClick={() => setModalImg(null)}>
+          <div className="relative max-w-3xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
+            <button className="absolute top-2 right-2 text-white text-3xl font-bold z-10" onClick={() => setModalImg(null)}>&times;</button>
+            <img src={modalImg.src} alt={modalImg.alt} className="w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl border-4 border-red-700" />
+          </div>
+        </div>
+      )}
+      <Footer />
     </main>
   );
 }
