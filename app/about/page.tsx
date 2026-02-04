@@ -4,7 +4,7 @@ export default function About() {
   return (
     <main className="flex flex-col items-center min-h-screen bg-red-700 px-0 py-0">
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-r from-red-50 to-white border-b-2 border-gray-100 py-12 sm:py-20 px-2 sm:px-4 flex flex-col items-center justify-center">
+      <section className="w-full bg-linear-to-r from-red-50 to-white border-b-2 border-gray-100 py-12 sm:py-20 px-2 sm:px-4 flex flex-col items-center justify-center">
         <div className="max-w-3xl text-center">
           <h1 className="text-3xl sm:text-5xl font-bold text-red-700 mb-4 sm:mb-6 font-poppins-italic-700">About PrimeSweepServices</h1>
           <p className="text-base sm:text-lg text-gray-800 mb-2">
@@ -21,13 +21,13 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-10 w-full max-w-6xl justify-center items-stretch px-2 sm:px-4 mx-auto mt-0 z-10 relative mb-4">
           {/* Bubbles stacked vertically */}
           <div className="flex flex-col gap-4 sm:gap-8 flex-1 mb-6 md:mb-0">
-            <section className="bg-gradient-to-r from-red-50 to-white rounded-3xl shadow-xl p-5 sm:p-8 flex flex-col justify-center items-center text-red-700">
+            <section className="bg-linear-to-r from-red-50 to-white rounded-3xl shadow-xl p-5 sm:p-8 flex flex-col justify-center items-center text-red-700">
               <h2 className="text-xl sm:text-2xl font-bold mb-2">Our Mission</h2>
               <p className="text-base sm:text-lg">
                 To deliver top-quality street sweeping solutions that enhance safety, appearance, and sustainability for our clients.
               </p>
             </section>
-            <section className="bg-gradient-to-r from-red-50 to-white rounded-3xl shadow-xl p-5 sm:p-8 flex flex-col justify-center items-center text-red-700">
+            <section className="bg-linear-to-r from-red-50 to-white rounded-3xl shadow-xl p-5 sm:p-8 flex flex-col justify-center items-center text-red-700">
               <h2 className="text-xl sm:text-2xl font-bold mb-2">Why Choose Us?</h2>
               <ul className="list-disc list-inside text-red-700 text-base sm:text-lg">
                 <li>Modern sweeper trucks</li>
@@ -38,7 +38,7 @@ export default function About() {
             </section>
           </div>
           {/* Contact Form */}
-          <section className="flex-1 bg-gradient-to-r from-red-50 to-white rounded-2xl shadow-xl border border-gray-100 p-5 sm:p-8 flex flex-col justify-center">
+          <section className="flex-1 bg-linear-to-r from-red-50 to-white rounded-2xl shadow-xl border border-gray-100 p-5 sm:p-8 flex flex-col justify-center">
             <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-3 sm:mb-4">Contact Us</h2>
             <form className="flex flex-col gap-4 sm:gap-5">
               <div>

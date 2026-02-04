@@ -4,7 +4,6 @@
   .mobile-brand {
     display: block;
     width: 100%;
-    margin-bottom: 0.5rem;
     text-align: center;
   }
   .mobile-nav-row {
@@ -15,22 +14,8 @@
   .mobile-nav-links {
     flex-direction: row !important;
     gap: 8px !important;
-    width: 100% !important;
+    width: 100%;
     justify-content: center !important;
-  }
-  .mobile-black-bar {
-    width: 100vw;
-    height: 12px;
-    background: #111;
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-  .mobile-black-bar-top {
-    margin-bottom: 0;
-  }
-  .mobile-black-bar-bottom {
-    margin-top: 1rem;
   }
   .mobile-nav-row {
     flex-direction: row !important;
