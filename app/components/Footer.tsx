@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white border-t-2 border-gray-100 py-6 mt-8 sm:mt-12">
-      <div className="max-w-4xl mx-auto text-center px-2">
+    <footer className="w-full bg-white border-t-2 border-gray-100 py-6 mt-8 sm:mt-12 px-0">
+      <div className="w-full text-center px-0">
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 justify-center items-center text-gray-600 text-sm mb-2">
           <span>Phone: (555) 123-4567</span>
           <span>Email: info@primesweep.com</span>

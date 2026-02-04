@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <section className="relative flex items-center min-h-[400px] sm:min-h-[500px] py-10 sm:py-24 px-2 sm:px-0 w-full bg-gradient-to-r from-red-50 to-white overflow-hidden border-y-2 border-gray-200">
-      <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mx-auto px-2 sm:px-6 md:px-12 gap-8 md:gap-12">
+    <section className="relative flex items-center min-h-[400px] sm:min-h-[500px] py-10 sm:py-24 px-0 w-full bg-gradient-to-r from-red-50 to-white overflow-hidden">
+      <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mx-auto gap-6 md:gap-12 px-2 sm:px-4">
         <div className="flex flex-col items-start flex-1 w-full">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-red-700 mb-3 sm:mb-4 font-poppins-italic-700 leading-tight drop-shadow-lg">PrimeSweepServices</h1>
           <h2 className="text-lg sm:text-2xl text-gray-700 mb-4 sm:mb-8 font-semibold">Professional Street Sweeping & Environmental Services</h2>
