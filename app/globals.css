@@ -1,11 +1,36 @@
 /* Mobile-only styles for nav, top bar, and black bars */
 @media (max-width: 640px) {
-  .mobile-red-top-bar {
-    width: 100vw;
-    height: 32px;
-    background: #c00;
+  /* Remove mobile red top bar, not needed */
+  .mobile-brand {
     display: block;
-    margin-bottom: -8px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .mobile-nav-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+  }
+  .mobile-nav-links {
+    flex-direction: row !important;
+    gap: 8px !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .mobile-black-bar {
+    width: 100vw;
+    height: 12px;
+    background: #111;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .mobile-black-bar-top {
+    margin-bottom: 0;
+  }
+  .mobile-black-bar-bottom {
+    margin-top: 1rem;
   }
   .mobile-nav-row {
     flex-direction: row !important;
