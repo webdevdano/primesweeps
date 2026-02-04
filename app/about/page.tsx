@@ -1,4 +1,3 @@
-import Footer from "@/app/components/Footer";
 
 export default function About() {
   return (
