@@ -1,6 +1,36 @@
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../components/Footer';
 
 export default function About() {
+  // Handle form submission
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        toast.success('Email received! We will get back to you soon.');
+        form.reset();
+      } else {
+        toast.error('Failed to send email. Please try again.');
+      }
+    } catch {
+      toast.error('Failed to send email. Please try again.');
+    }
+  };
+
   return (
     <main className="flex flex-col items-center min-h-screen bg-red-700 px-0 py-0">
       {/* Hero Section */}
@@ -40,24 +70,25 @@ export default function About() {
           {/* Contact Form */}
           <section className="flex-1 bg-linear-to-r from-red-50 to-white rounded-2xl shadow-xl border border-gray-100 p-5 sm:p-8 flex flex-col justify-center">
             <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-3 sm:mb-4">Contact Us</h2>
-            <form className="flex flex-col gap-4 sm:gap-5">
+            <form className="flex flex-col gap-4 sm:gap-5" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-1">Name</label>
-                <input type="text" id="name" name="name" required className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" />
+                <input type="text" id="name" name="name" required className="w-full text-black px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-1">Email</label>
-                <input type="email" id="email" name="email" required className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" />
+                <input type="email" id="email" name="email" required className="w-full text-black px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300" />
               </div>
               <div>
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-1">Message</label>
-                <textarea id="message" name="message" rows={4} required className="w-full px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"></textarea>
+                <textarea id="message" name="message" rows={4} required className="w-full text-black px-3 sm:px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-300"></textarea>
               </div>
               <button type="submit" className="mt-2 bg-red-700 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full shadow hover:bg-red-800 transition text-base sm:text-lg self-end">Send Message</button>
             </form>
           </section>
         </div>
       </section>
+      <ToastContainer position="top-center" autoClose={3000} hideProgressBar={false} newestOnTop closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
       <Footer />
     </main>
   );
