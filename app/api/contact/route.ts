@@ -23,7 +23,11 @@ export async function POST(request: Request) {
   try {
     await transporter.sendMail(mailOptions);
     return NextResponse.json({ success: true });
-  } catch (error) {
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
-  }
+    } catch (error) {
+      let errorMsg = 'Unknown error';
+      if (error instanceof Error) {
+        errorMsg = error.message;
+      }
+      return NextResponse.json({ success: false, error: errorMsg }, { status: 500 });
+    }
 }
