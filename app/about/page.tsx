@@ -11,7 +11,7 @@ export default function About() {
             PrimeSweep is a professional street sweeping business specializing in keeping roads, parking lots, and industrial areas clean using state-of-the-art sweeper trucks.
           </p>
           <p className="text-base sm:text-lg text-gray-800 mb-4">
-            Our experienced team is dedicated to providing reliable, efficient, and environmentally friendly services for communities and businesses.
+            Our experienced team is dedicated to providing reliable, efficient, and environmentally friendly services for communities and businesses in Ontario, CA and surrounding areas.<br/> We pride ourselves on our commitment to customer satisfaction and our role in enhancing the cleanliness and safety of our local environment.
           </p>
         </div>
       </section>
