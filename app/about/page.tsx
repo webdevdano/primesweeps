@@ -69,8 +69,8 @@ export default function About() {
             </section>
           </div>
           {/* Contact Form */}
-          <section className="flex-1 bg-linear-to-r from-red-50 to-white rounded-2xl shadow-xl border border-gray-100 p-5 sm:p-8 flex flex-col justify-center">
-            <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-3 sm:mb-4">Contact Us</h2>
+          <section id="contact" className="flex-1 bg-linear-to-r from-red-50 to-white rounded-2xl shadow-xl border border-gray-100 p-5 sm:p-8 flex flex-col justify-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-red-700 mb-3 sm:mb-4">Contact Us for a Quote!</h2>
             <form className="flex flex-col gap-4 sm:gap-5" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-gray-700 font-medium mb-1">Name</label>

@@ -41,14 +41,14 @@ export default function RootLayout({
                   <Link href="/" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition text-center">Home</Link>
                   <Link href="/about" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition text-center">About</Link>
                   <Link href="/gallery" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition text-center">Gallery</Link>
-                  <Link href="/contact" className="text-white font-semibold text-base px-4 py-2 rounded bg-yellow-400 hover:bg-yellow-300 hover:text-red-700 transition text-center">Quote</Link>
+                  <Link href="/about#contact" className="text-white font-semibold text-base px-4 py-2 rounded bg-yellow-400 hover:bg-yellow-300 hover:text-red-700 transition text-center">Quote</Link>
                 </div>
               </div>
               <div className="hidden sm:flex flex-row gap-8 items-center justify-center">
                 <Link href="/" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition w-full sm:w-auto text-center">Home</Link>
                 <Link href="/about" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition w-full sm:w-auto text-center">About</Link>
                 <Link href="/gallery" className="text-white font-medium text-base px-4 py-2 rounded hover:bg-gray-100 hover:text-red-700 transition w-full sm:w-auto text-center">Gallery</Link>
-                <Link href="/contact" className="text-white font-semibold text-base px-4 py-2 rounded bg-yellow-400 hover:bg-yellow-300 hover:text-red-700 transition w-full sm:w-auto text-center">Quote</Link>
+                <Link href="/about#contact" className="text-white font-semibold text-base px-4 py-2 rounded bg-yellow-400 hover:bg-yellow-300 hover:text-red-700 transition w-full sm:w-auto text-center">Quote</Link>
               </div>
             </div>
           </nav>
