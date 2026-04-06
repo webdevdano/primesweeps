@@ -9,7 +9,7 @@ export default function Footer() {
           <span>Email: <a href="mailto:PrimeSweepServices77@gmail.com" className="hover:text-red-700">primesweepservices77@gmail.com</a></span>
           <span>Ontario, CA + 20 mile radius</span>
         </div>
-        <span className="text-gray-700 block mb-2">&copy; {new Date().getFullYear()} <span className="text-red-700 font-bold">PrimeSweepServices</span>. All rights reserved.</span>
+        <span className="text-gray-700 block mb-2">&copy; {new Date().getFullYear()} <span className="text-red-700 font-bold">Prime Sweeping Services</span>. All rights reserved.</span>
         <span className="text-gray-500 text-xs hover:text-red-700">Developed by <a href="https://danielmarinelarena.vercel.app" target="_blank" rel="noopener noreferrer">Daniel Marinelarena</a></span>
       </div>
     </footer>
