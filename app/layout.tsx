@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from 'next/link';
+import Head from 'next/head';
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -32,6 +33,33 @@ export default function RootLayout({
 }>) {
   return (
       <html lang="en">
+        <Head>
+          <meta property="og:title" content="Prime Sweep Services" />
+          <meta property="og:description" content="Professional Street Sweeping & Environmental Services" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.primesweep.com/" />
+          <meta property="og:image" content="https://www.primesweep.com/Images/SweeperTruck1.jpg" />
+          <link rel="canonical" href="https://www.primesweep.com/" />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'Prime Sweep Services',
+            description: 'Professional Street Sweeping & Environmental Services',
+            url: 'https://www.primesweep.com/',
+            image: 'https://www.primesweep.com/Images/SweeperTruck1.jpg',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Ontario',
+              addressRegion: 'CA',
+              addressCountry: 'US'
+            },
+            contactPoint: {
+              '@type': 'ContactPoint',
+              contactType: 'customer service',
+              url: 'https://www.primesweep.com/about#contact'
+            }
+          }) }} />
+        </Head>
         <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased bg-linear-to-r from-red-50 to-white`}>
           <nav className="w-full bg-red-700 shadow mb-8">
             <div className="max-w-4xl mx-auto flex flex-col mobile-nav-row sm:flex-row sm:items-center sm:justify-between px-4 sm:px-6 py-4 gap-2 sm:gap-0">
