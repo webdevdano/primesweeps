@@ -37,9 +37,9 @@ export default function About() {
       {/* Hero Section */}
       <section className="w-full bg-linear-to-r from-red-50 to-white border-b-2 border-gray-100 py-12 sm:py-20 px-2 sm:px-4 flex flex-col items-center justify-center">
         <div className="max-w-3xl text-center">
-          <h1 className="text-3xl sm:text-5xl font-bold text-red-700 mb-4 sm:mb-6 font-poppins-italic-700">About PrimeSweepServices</h1>
+          <h1 className="text-3xl sm:text-5xl font-bold text-red-700 mb-4 sm:mb-6 font-poppins-italic-700">About Prime Sweeping Services</h1>
           <p className="text-base sm:text-lg text-gray-800 mb-2">
-            PrimeSweep is a professional street sweeping business specializing in keeping roads, parking lots, and industrial areas clean using state-of-the-art sweeper trucks.
+            Prime Sweeping Services is a professional street sweeping business specializing in keeping roads, parking lots, and industrial areas clean using state-of-the-art sweeper trucks.
           </p>
           <p className="text-base sm:text-lg text-gray-800 mb-4">
             Our experienced team is dedicated to providing reliable, efficient, and environmentally friendly services for communities and businesses in Ontario, CA and surrounding areas.<br/> We pride ourselves on our commitment to customer satisfaction and our role in enhancing the cleanliness and safety of our local environment.

@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative flex items-center min-h-100 sm:min-h-125 py-10 sm:py-24 px-0 w-full bg-linear-to-r from-red-50 to-white overflow-hidden">
       <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mx-auto gap-6 md:gap-12 px-2 sm:px-4">
         <div className="flex flex-col items-start flex-1 w-full">
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-red-700 mb-3 sm:mb-4 font-poppins-italic-700 leading-tight drop-shadow-lg">PrimeSweepServices</h1>
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-red-700 mb-3 sm:mb-4 font-poppins-italic-700 leading-tight drop-shadow-lg">Prime SweepingServices</h1>
           <h2 className="text-lg sm:text-2xl text-gray-700 mb-4 sm:mb-8 font-semibold">Professional Street Sweeping & Pressure Washing Services</h2>
           <p className="text-base sm:text-lg text-gray-800 mb-4 sm:mb-8 max-w-xl sm:max-w-2xl">
             We deliver comprehensive street sweeping and pressure washing solutions for municipalities, businesses, and communities. Our modern fleet and expert team ensure cleaner, safer, and more attractive streets. <br/> From routine maintenance to emergency response, we’re committed to excellence and sustainability in every sweep.
